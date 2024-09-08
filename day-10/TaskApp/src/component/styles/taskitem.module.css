@@ -1,0 +1,28 @@
+.task {
+  border: 1px solid blue;
+  border-radius: 20px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  padding: 20px;
+}
+.operation {
+  display: flex;
+  gap: 20px;
+}
+
+.operation > button {
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.operation button:first-child {
+  background: blue;
+}
+.operation button:nth-child(2) {
+  background: green;
+}
+.operation button:nth-child(3) {
+  background: red;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/archieve.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="showdata">
+        <div class="filter">
+          <select name="Select Level " id="" onchange="handleLevel(event)">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option></select
+          ><select name="Select Status" id="" onchange="handleStatus(event)">
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Restore</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/archieve.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid black;
+  font-family: sans-serif;
+  padding-inline: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.rating{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rating>label{
+  width: 50px;
+}

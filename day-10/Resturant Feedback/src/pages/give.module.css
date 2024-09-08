@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  border: 4px dotted black;
+  padding: 40px;
+  font-family: sans-serif;
+  background-color: rgb(178, 211, 211);
+}
+.form > label {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.form > input,
+select {
+  height: 20px;
+}
+.form > label:first-child {
+  margin-top: 0px;
+}
+.form > button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
