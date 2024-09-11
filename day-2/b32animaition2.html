@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100px;
+        margin-top: 10px;
+
+        position: absolute;
+        background-image: linear-gradient(to right, blue, Pink);
+      }
+      p {
+        z-index: 2;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+      }
+      .left {
+        left: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        animation-name: leftAnime;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      .right {
+        right: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        animation-name: rightAnime;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      .box2 {
+        top: 120px;
+      }
+      .box3 {
+        top: 240px;
+      }
+      .box4 {
+        top: 360px;
+      }
+      @keyframes leftAnime {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 50vw;
+        }
+      }
+      @keyframes rightAnime {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 50vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1 left"><p>1</p></div>
+    <div class="box2 right"><p>2</p></div>
+    <div class="box3 left"><p>3</p></div>
+    <div class="box4 right"><p>4</p></div>
+  </body>
+</html>
