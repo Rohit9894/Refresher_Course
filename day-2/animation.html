@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(red, pink);      }
+      div {
+        width: 100%;
+        position: relative;
+      }
+      img {
+        width: 200px;
+      }
+      .jerry {
+        position: absolute;
+         animation: animateJerry;
+         animation-duration: 2s;
+         animation-iteration-count: infinite;
+      }
+   
+      .tom {
+        position: absolute;
+         animation: animateTom;
+         animation-duration: 2s;
+         animation-iteration-count: infinite;
+      }
+      @keyframes animateJerry {
+        from {
+          left: 0;
+    
+        }
+        to {
+          left: 85%;
+      
+        }
+      }
+      @keyframes animateTom {
+        from {
+          left: 85%; /* Start from the right */
+        }
+        to {
+          left: 0; /* Move to the left */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        class="jerry"
+        src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png"
+        alt="Tom"
+      />
+      <img
+        class="tom"
+        src="https://pngimg.com/d/tom_and_jerry_PNG58.png"
+        alt="Jerry"
+      />
+    </div>
+  </body>
+</html>
